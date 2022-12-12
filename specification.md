@@ -2358,7 +2358,7 @@ the [Workflow Timeouts](#Workflow-Timeouts) section.
 | [stateDataFilter](#State-data-filters) | State data filter | object | no |
 | [onErrors](#Error-Definition) | States error handling and retries definitions | array | no |
 | [timeouts](#Workflow-Timeouts) | State specific timeout settings | object | no |
-| defaultCondition | Default transition of the workflow if there is no matching data conditions or event timeout is reached. Can be a transition or end definition | object | yes |
+| defaultCondition | Default transition of the workflow if there is no matching data conditions or event timeout is reached. Can be a transition or end definition | string or object | yes |
 | [compensatedBy](#Workflow-Compensation) | Unique name of a workflow state which is responsible for compensation of this state | string | no |
 | [usedForCompensation](#Workflow-Compensation) | If `true`, this state is used to compensate another state. Default is `false` | boolean | no |
 | [metadata](#Workflow-Metadata) | Metadata information| object | no |

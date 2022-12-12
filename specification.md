@@ -5556,7 +5556,7 @@ not obeyed in the workflow definition.
 
 #### States Timeout Definition
 
-All workflow states can define the `timeouts` property and can define different timeout
+All workflow states except [Sleep states](#Sleep-State) and [Inject states](#Inject-State) can define the `timeouts` property and can define different timeout
 settings depending on their state type.
 Please reference each [workflow state definitions](#Workflow-States) for more information on which
 timeout settings are available for each state type.

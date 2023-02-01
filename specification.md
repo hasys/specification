@@ -2618,6 +2618,7 @@ Note that `transition` and `end` properties are mutually exclusive, meaning that
 | name | Unique State name | string | yes |
 | type | State type | string | yes |
 | data | JSON object which can be set as state's data input and can be manipulated via filter | object | yes |
+| [timeouts](#Workflow-Timeouts) | State specific timeout settings | object | no |
 | [stateDataFilter](#state-data-filters) | State data filter | object | no |
 | [transition](#Transitions) | Next transition of the workflow after injection has completed | string or object | yes (if `end` is not defined) |
 | [compensatedBy](#Workflow-Compensation) | Unique name of a workflow state which is responsible for compensation of this state | string | no |
@@ -5552,7 +5553,7 @@ not obeyed in the workflow definition.
 
 #### States Timeout Definition
 
-All workflow states can define the `timeouts` property and can define different timeout
+All workflow states except Sleep State can define the `timeouts` property and can define different timeout
 settings depending on their state type.
 Please reference each [workflow state definitions](#Workflow-States) for more information on which
 timeout settings are available for each state type.
